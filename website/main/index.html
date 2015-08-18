@@ -47,11 +47,11 @@
 </head>
 <body>
 	<ul id="menu">
-		<li data-menuanchor="Home" class="active"><a href="#Home">Home</a></li>
-		<li data-menuanchor="Events"><a href="#Events">Events</a></li>
-		<li data-menuanchor="Sponsors"><a href="#Sponsors">Sponsors</a></li>
-		<li data-menuanchor="AboutUs"><a href="#AboutUs">About Us</a></li>
 		<li data-menuanchor="ContactUs"><a href="#ContactUs">Contact Us</a></li>
+		<li data-menuanchor="AboutUs"><a href="#AboutUs">About Us</a></li>
+		<li data-menuanchor="Sponsors"><a href="#Sponsors">Sponsors</a></li>
+		<li data-menuanchor="Events"><a href="#Events">Events</a></li>
+		<li data-menuanchor="Home" class="active"><a href="#Home">Home</a></li>
 	</ul>
 
 
@@ -63,7 +63,7 @@
 	    		<div id="mouse"></div>
 	    	</div>
 	    </div>
-	    <div class="section">
+	    <div class="section" id="eventsSection">
 	    	<div class="intro">
 	    		<div id="colors2"></div>
 	    	</div>
@@ -84,6 +84,16 @@
 	    	</div>
 	    </div>
 	</div>
-
+	<script>
+		    $('#csman').click(function(){
+    			$("#pagepiling").pagepiling.moveTo("Events");
+			});
+			$('#alienware').click(function(){
+    			$("#pagepiling").pagepiling.moveTo("Sponsors");
+			});
+					    		    $('#mouse').click(function(){
+    			$("#pagepiling").pagepiling.moveTo("Sponsors");
+			});
+	</script>
 </body>
 </html>
